@@ -16,13 +16,16 @@ popd
 ./run.sh clean
 
 # build
-./run.sh build
+./run.sh buildandtest
 
 # run tests
 ./run.sh test
 
 # build and run tests when file changes under src/ and tst/
 ./run.sh watch
+
+# build main binary
+./run.sh buildmain
 
 # run main binary
 ./run.sh main
