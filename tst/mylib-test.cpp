@@ -12,7 +12,9 @@ TEST(MyLib, add)
 
 TEST(MyLib, multiply)
 {
-    EXPECT_EQ(MyLib::multiply(0, 0), 0);
+    EXPECT_EQ(MyLib::multiply(0, 1), 0);
+    EXPECT_EQ(MyLib::multiply(1, 0), 0);
+    EXPECT_EQ(MyLib::multiply(0, 1), 0);
     EXPECT_EQ(MyLib::multiply(1, 1), 1);
     EXPECT_EQ(MyLib::multiply(10, 10), 100);
 }
