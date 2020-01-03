@@ -46,8 +46,6 @@ popd
 # run all tests in MyLib
 ./build/tst/app_tst --gtest_filter='MyLib.*'
 
+# list command line options
 ./build/tst/app_tst --help
-
-
-
 ```
