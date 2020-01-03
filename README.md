@@ -30,3 +30,24 @@ popd
 # run main binary
 ./run.sh main
 ```
+
+### googletest command line examples
+
+```sh
+# run all tests
+./build/tst/app_tst
+
+# list tests
+./build/tst/app_tst --gtest_list_tests
+
+# run specific test
+./build/tst/app_tst --gtest_filter=MyLib.adhoc
+
+# run all tests in MyLib
+./build/tst/app_tst --gtest_filter='MyLib.*'
+
+./build/tst/app_tst --help
+
+
+
+```
